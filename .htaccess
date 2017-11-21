@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+
+      RewriteEngine On
+      #Options +FollowSymLinks
+
+     RewriteCond %{REQUEST_FILENAME}  -f [OR]
+     RewriteCond %{REQUEST_FILENAME} !-f
+     #RewriteRule ^(.*)$ route.php [L,QSA]
+
+     RewriteRule ^(.*)$ route.php [L,QSA]
+
+</IfModule>
